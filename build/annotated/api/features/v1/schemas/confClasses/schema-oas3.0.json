@@ -1,0 +1,25 @@
+{
+  "x-defs": {
+    "ogc.api.features.v1.schemas.confClasses": {
+      "type": "object",
+      "required": [
+        "conformsTo"
+      ],
+      "properties": {
+        "conformsTo": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "example": "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core"
+          }
+        }
+      },
+      "x-schema-source": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/confClasses/schema-oas3.0.json"
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/confClasses/schema-oas3.0.json#/x-defs/ogc.api.features.v1.schemas.confClasses"
+    }
+  ]
+}

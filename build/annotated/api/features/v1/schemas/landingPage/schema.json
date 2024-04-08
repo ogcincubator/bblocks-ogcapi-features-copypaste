@@ -1,0 +1,17 @@
+{
+  "allOf": [
+    {
+      "$ref": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml"
+    },
+    {
+      "properties": {
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json"
+          }
+        }
+      }
+    }
+  ]
+}

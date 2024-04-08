@@ -1,0 +1,56 @@
+path	@id
+/links	
+/links/href	http://www.w3.org/ns/oa#hasTarget
+/links/rel	http://www.iana.org/assignments/relation
+/links/type	http://purl.org/dc/terms/type
+/links/hreflang	http://purl.org/dc/terms/language
+/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/links/length	http://purl.org/dc/terms/extent
+/collections	
+/collections/id	
+/collections/title	
+/collections/description	
+/collections/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
+/collections/links/href	http://www.w3.org/ns/oa#hasTarget
+/collections/links/rel	http://www.iana.org/assignments/relation
+/collections/links/type	http://purl.org/dc/terms/type
+/collections/links/hreflang	http://purl.org/dc/terms/language
+/collections/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/collections/links/length	http://purl.org/dc/terms/extent
+/collections/extent	
+/collections/extent/spatial	
+/collections/extent/spatial/bbox	
+/collections/extent/spatial/crs	
+/collections/extent/temporal	
+/collections/extent/temporal/interval	
+/collections/extent/temporal/trs	
+/collections/itemType	
+/collections/crs	
+/links/anchor	
+/collections/type	
+/collections/features	
+/collections/features/type	@type
+/collections/features/id	@id
+/collections/features/properties	@nest
+/collections/features/geometry	https://purl.org/geojson/vocab#geometry
+/collections/features/geometry/type	@type
+/collections/features/geometry/coordinates	https://purl.org/geojson/vocab#coordinates
+/collections/features/geometry/bbox	https://purl.org/geojson/vocab#bbox
+/collections/features/geometry/geometries	
+/collections/features/geometry/geometries/type	@type
+/collections/features/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates
+/collections/features/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox
+/collections/features/bbox	https://purl.org/geojson/vocab#bbox
+/collections/bbox	
+/collections/links/anchor	
+/collections/timeStamp	
+/collections/numberMatched	
+/collections/numberReturned	
+/collections/features/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
+/collections/features/links/href	http://www.w3.org/ns/oa#hasTarget
+/collections/features/links/rel	http://www.iana.org/assignments/relation
+/collections/features/links/anchor	
+/collections/features/links/type	http://purl.org/dc/terms/type
+/collections/features/links/hreflang	http://purl.org/dc/terms/language
+/collections/features/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/collections/features/links/length	http://purl.org/dc/terms/extent

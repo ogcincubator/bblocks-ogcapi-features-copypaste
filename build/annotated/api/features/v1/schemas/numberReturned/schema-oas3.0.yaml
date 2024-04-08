@@ -1,0 +1,19 @@
+x-defs:
+  ogc.api.features.v1.schemas.numberReturned:
+    description: 'The number of features in the feature collection.
+
+
+      A server may omit this information in a response, if the information
+
+      about the number of features is not known or difficult to compute.
+
+
+      If the value is provided, the value shall be identical to the number
+
+      of items in the "features" array.'
+    type: integer
+    minimum: 0
+    example: 10
+    x-schema-source: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberReturned/schema-oas3.0.yaml
+allOf:
+- $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberReturned/schema-oas3.0.yaml#/x-defs/ogc.api.features.v1.schemas.numberReturned

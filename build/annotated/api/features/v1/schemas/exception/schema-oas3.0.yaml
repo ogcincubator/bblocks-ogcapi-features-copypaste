@@ -1,0 +1,13 @@
+x-defs:
+  ogc.api.features.v1.schemas.exception:
+    type: object
+    required:
+    - code
+    properties:
+      code:
+        type: string
+      description:
+        type: string
+    x-schema-source: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/exception/schema-oas3.0.yaml
+allOf:
+- $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/exception/schema-oas3.0.yaml#/x-defs/ogc.api.features.v1.schemas.exception

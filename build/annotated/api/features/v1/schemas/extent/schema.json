@@ -1,0 +1,22 @@
+{
+  "allOf": [
+    {
+      "$ref": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/extent.yaml"
+    },
+    {
+      "properties": {
+        "spatial": {
+          "type": "object",
+          "properties": {
+            "bbox": {
+              "type": "array",
+              "items": {
+                "ref": "bblocks://ogc.geo.common.data_types.bounding_box"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

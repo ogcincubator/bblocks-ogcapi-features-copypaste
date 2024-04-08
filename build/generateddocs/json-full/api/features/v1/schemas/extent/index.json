@@ -1,0 +1,34 @@
+
+
+{
+  "itemIdentifier": "ogc.api.features.v1.schemas.extent",
+  "name": "Schema for extent",
+  "status": "under-development",
+  "dateTimeAddition": "2024-03-22T11:40:00+01:00",
+  "itemClass": "schema",
+  "register": "ogcapi-features",
+  "version": "0.1",
+  "dateOfLastChange": "2024-04-08",
+  "sources": [
+    {
+      "title": "OGC API Features - Part 1 - Core corrigendum",
+      "link": "https://docs.ogc.org/is/17-069r4/17-069r4.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-features",
+    "features"
+  ],
+  "abstract": "This building block corresponds to the schema for an OGC API Records extent",
+  "shaclRules": {},
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/extent/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/extent/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/extent/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/extent/",
+  "validationPassed": true,
+  "annotatedSchema": "allOf:\n- $ref: https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/extent.yaml\n- properties:\n    spatial:\n      type: object\n      properties:\n        bbox:\n          type: array\n          items:\n            ref: bblocks://ogc.geo.common.data_types.bounding_box\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-features",
+  "gitPath": "_sources/v1/schemas/extent"
+}
