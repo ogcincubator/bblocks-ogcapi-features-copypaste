@@ -312,6 +312,9 @@
             <a href="#schema-for-numberreturned-ogc-api-features-v1-schemas-numberreturned" class="toc-h1 toc-link" data-title="Schema for numberReturned ogc.api.features.v1.schemas.numberReturned">Schema for numberReturned <code>ogc.api.features.v1.schemas.numberReturned</code></a>
           </li>
           <li>
+            <a href="#description" class="toc-h1 toc-link" data-title="Description">Description</a>
+          </li>
+          <li>
             <a href="#json-schema" class="toc-h1 toc-link" data-title="JSON Schema">JSON Schema</a>
           </li>
           <li>
@@ -331,7 +334,7 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='schema-for-numberreturned-ogc-api-features-v1-schemas-numberreturned'>Schema for numberReturned <code>ogc.api.features.v1.schemas.numberReturned</code></h1>
-<p>This building block corresponds to the schema for an OGC API Records numberReturned</p>
+<p>The number of features in the feature collection</p>
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
@@ -341,6 +344,12 @@
 <aside class="success">
 This building block is <strong>valid</strong>
 </aside>
+<h1 id='description'>Description</h1>
+<p>A server may omit this information in a response, if the information
+about the number of features is not known or difficult to compute.</p>
+
+<p>If the value is provided, the value shall be identical to the number
+of items in the &quot;features&quot; array.</p>
 <h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">description</span><span class="pi">:</span> <span class="s1">'</span><span class="s">The</span><span class="nv"> </span><span class="s">number</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">features</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">feature</span><span class="nv"> </span><span class="s">collection.</span>
 
 

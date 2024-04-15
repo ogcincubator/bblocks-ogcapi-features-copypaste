@@ -3,10 +3,17 @@
 
 `ogc.api.features.v1.schemas.numberReturned` *v0.1*
 
-This building block corresponds to the schema for an OGC API Records numberReturned
+The number of features in the feature collection
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
+## Description
+
+A server may omit this information in a response, if the information
+about the number of features is not known or difficult to compute.
+
+If the value is provided, the value shall be identical to the number
+of items in the "features" array.
 ## Schema
 
 ```yaml

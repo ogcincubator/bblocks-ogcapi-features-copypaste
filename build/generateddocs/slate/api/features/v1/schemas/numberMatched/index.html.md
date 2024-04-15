@@ -17,7 +17,7 @@ meta:
 
 # Schema for numberMatched `ogc.api.features.v1.schemas.numberMatched`
 
-This building block corresponds to the schema for an OGC API Records numberMatched
+The number of features of the feature type that match the selection parameters like `bbox`
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

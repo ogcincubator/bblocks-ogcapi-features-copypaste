@@ -3,7 +3,7 @@
 
 `ogc.api.features.v1.schemas.timeStamp` *v0.1*
 
-This building block corresponds to the schema for an OGC API Records timeStamp
+This property indicates the time and date when the response was generated
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

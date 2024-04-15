@@ -17,7 +17,7 @@ meta:
 
 # Schema for numberReturned `ogc.api.features.v1.schemas.numberReturned`
 
-This building block corresponds to the schema for an OGC API Records numberReturned
+The number of features in the feature collection
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
@@ -28,6 +28,13 @@ This building block corresponds to the schema for an OGC API Records numberRetur
 This building block is <strong>valid</strong>
 </aside>
 
+# Description
+
+A server may omit this information in a response, if the information
+about the number of features is not known or difficult to compute.
+
+If the value is provided, the value shall be identical to the number
+of items in the "features" array.
 
 # JSON Schema
 

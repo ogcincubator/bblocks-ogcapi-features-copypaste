@@ -8,7 +8,7 @@
   "itemClass": "datatype",
   "register": "ogcapi-features",
   "version": "0.1",
-  "dateOfLastChange": "2024-04-08",
+  "dateOfLastChange": "2024-04-15",
   "sources": [
     {
       "title": "OGC API Features - Part 1 - Core corrigendum",
@@ -23,7 +23,7 @@
     "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/timeStamp/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/timeStamp/schema.json"
   },
-  "abstract": "This building block corresponds to the schema for an OGC API Records timeStamp",
+  "abstract": "This property indicates the time and date when the response was generated",
   "shaclRules": {},
   "sourceSchema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/timeStamp.yaml",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/timeStamp/",

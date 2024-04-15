@@ -17,7 +17,7 @@ meta:
 
 # Schema for timeStamp `ogc.api.features.v1.schemas.timeStamp`
 
-This building block corresponds to the schema for an OGC API Records timeStamp
+This property indicates the time and date when the response was generated
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

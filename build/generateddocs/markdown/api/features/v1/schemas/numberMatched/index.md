@@ -3,7 +3,7 @@
 
 `ogc.api.features.v1.schemas.numberMatched` *v0.1*
 
-This building block corresponds to the schema for an OGC API Records numberMatched
+The number of features of the feature type that match the selection parameters like `bbox`
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

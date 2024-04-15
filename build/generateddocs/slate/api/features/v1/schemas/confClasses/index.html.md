@@ -1,6 +1,7 @@
 ---
 title: Schema for confClasses (Schema)
 
+
 toc_footers:
   - Version 0.1
   - <a href='#'>Schema for confClasses</a>
@@ -25,8 +26,34 @@ This building block corresponds to the schema for an OGC API Records confClasses
 </p>
 
 <aside class="success">
-This building block is <strong>valid</strong>
+This building block is <strong><a href="https://github.com/ogcincubator/bblocks-ogcapi-features/blob/master/build/tests/api/features/v1/schemas/confClasses/" target="_blank">valid</a></strong>
 </aside>
+
+# Examples
+
+## Example of conformance class declaration
+
+
+
+```json
+{
+   "conformsTo": [
+      "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
+      "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30",
+      "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/html",
+      "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson",
+      "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/gmlsf0"
+   ]
+}
+
+```
+
+<blockquote class="lang-specific json">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-ogcapi-features/build/tests/api/features/v1/schemas/confClasses/example_1_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-ogcapi-features%2Fbuild%2Ftests%2Fapi%2Ffeatures%2Fv1%2Fschemas%2FconfClasses%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+</blockquote>
+
 
 
 # JSON Schema

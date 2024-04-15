@@ -7,6 +7,23 @@ This building block corresponds to the schema for an OGC API Records confClasses
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
+## Examples
+
+### Example of conformance class declaration
+#### json
+```json
+{
+   "conformsTo": [
+      "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
+      "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30",
+      "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/html",
+      "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson",
+      "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/gmlsf0"
+   ]
+}
+
+```
+
 ## Schema
 
 ```yaml

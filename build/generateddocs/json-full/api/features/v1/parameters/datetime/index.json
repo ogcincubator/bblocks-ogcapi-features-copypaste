@@ -1,0 +1,34 @@
+
+
+{
+  "itemIdentifier": "ogc.api.features.v1.parameters.datetime",
+  "name": "Schema for datetime",
+  "status": "under-development",
+  "dateTimeAddition": "2024-03-22T11:40:00+01:00",
+  "itemClass": "parameter",
+  "register": "ogcapi-features",
+  "version": "0.1",
+  "dateOfLastChange": "2024-04-15",
+  "sources": [
+    {
+      "title": "OGC API Features - Part 1 - Core corrigendum",
+      "link": "https://docs.ogc.org/is/17-069r4/17-069r4.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-features",
+    "features"
+  ],
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/datetime/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/datetime/schema.json"
+  },
+  "abstract": "This building block corresponds to the schema for an OGC API Records datetime",
+  "shaclRules": {},
+  "sourceSchema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/datetime.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/parameters/datetime/",
+  "validationPassed": true,
+  "annotatedSchema": "name: datetime\nin: query\ndescription: 'Either a date-time or an interval. Date and time expressions adhere\n  to RFC 3339.\n\n  Intervals may be bounded or half-bounded (double-dots at start or end).\n\n\n  Examples:\n\n\n  * A date-time: \"2018-02-12T23:20:50Z\"\n\n  * A bounded interval: \"2018-02-12T00:00:00Z/2018-03-18T12:31:12Z\"\n\n  * Half-bounded intervals: \"2018-02-12T00:00:00Z/..\" or \"../2018-03-18T12:31:12Z\"\n\n\n  Only features that have a temporal property that intersects the value of\n\n  `datetime` are selected.\n\n\n  If a feature has multiple temporal properties, it is the decision of the\n\n  server whether only a single temporal property is used to determine\n\n  the extent or all relevant temporal properties.'\nrequired: false\nschema:\n  type: string\nstyle: form\nexplode: false\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-features",
+  "gitPath": "_sources/v1/parameters/datetime"
+}
