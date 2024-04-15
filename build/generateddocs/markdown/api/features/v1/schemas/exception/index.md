@@ -3,7 +3,7 @@
 
 `ogc.api.features.v1.schemas.exception` *v0.1*
 
-This building block corresponds to the schema for an OGC API Records exception
+This building block corresponds to the schema for an OGC API Features exception
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

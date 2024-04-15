@@ -17,7 +17,7 @@ meta:
 
 # Schema for exception `ogc.api.features.v1.schemas.exception`
 
-This building block corresponds to the schema for an OGC API Records exception
+This building block corresponds to the schema for an OGC API Features exception
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

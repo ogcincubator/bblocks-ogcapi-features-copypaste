@@ -17,7 +17,7 @@ meta:
 
 # OGC API Features `ogc.api.features.v1.api`
 
-This building block corresponds to OGC API Records
+This building block corresponds to OGC API Features
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

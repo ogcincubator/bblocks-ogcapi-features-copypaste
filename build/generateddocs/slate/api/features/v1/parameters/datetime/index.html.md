@@ -17,7 +17,7 @@ meta:
 
 # Schema for datetime `ogc.api.features.v1.parameters.datetime`
 
-This building block corresponds to the schema for an OGC API Records datetime
+This building block corresponds to the schema for an OGC API Features datetime
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

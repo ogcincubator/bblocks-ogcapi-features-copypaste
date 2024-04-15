@@ -17,7 +17,7 @@ meta:
 
 # Schema for collectionId `ogc.api.features.v1.parameters.collectionId`
 
-This building block corresponds to the schema for an OGC API Records collectionId
+This building block corresponds to the schema for an OGC API Features collectionId
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

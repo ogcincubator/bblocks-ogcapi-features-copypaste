@@ -22,7 +22,7 @@ meta:
 
 # Schema for collection `ogc.api.features.v1.schemas.collection`
 
-This building block corresponds to the schema for an OGC API Records collection
+This building block corresponds to the schema for an OGC API Features collection
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

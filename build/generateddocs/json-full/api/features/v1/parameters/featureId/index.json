@@ -23,7 +23,7 @@
     "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/featureId/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/featureId/schema.json"
   },
-  "abstract": "This building block corresponds to the schema for an OGC API Records featureId",
+  "abstract": "This building block corresponds to the schema for an OGC API Features featureId",
   "shaclRules": {},
   "sourceSchema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/limit.yaml",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/parameters/featureId/",

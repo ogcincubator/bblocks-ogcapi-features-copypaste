@@ -3,7 +3,7 @@
 
 `ogc.api.features.v1.api` *v0.1*
 
-This building block corresponds to OGC API Records
+This building block corresponds to OGC API Features
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

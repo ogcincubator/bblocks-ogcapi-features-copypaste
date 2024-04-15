@@ -17,7 +17,7 @@ meta:
 
 # Schema for extent `ogc.api.features.v1.schemas.extent`
 
-This building block corresponds to the schema for an OGC API Records extent
+This building block corresponds to the schema for an OGC API Features extent
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

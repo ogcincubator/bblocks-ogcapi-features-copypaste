@@ -17,7 +17,7 @@ meta:
 
 # Schema for featureId `ogc.api.features.v1.parameters.limit`
 
-This building block corresponds to the schema for an OGC API Records featureId
+This building block corresponds to the schema for an OGC API Features featureId
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

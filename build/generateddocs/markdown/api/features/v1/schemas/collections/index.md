@@ -3,7 +3,7 @@
 
 `ogc.api.features.v1.schemas.collections` *v0.1*
 
-This building block corresponds to the schema for an OGC API Records collections
+This building block corresponds to the schema for an OGC API Features collections
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

@@ -3,7 +3,7 @@
 
 `ogc.api.features.v1.parameters.collectionId` *v0.1*
 
-This building block corresponds to the schema for an OGC API Records collectionId
+This building block corresponds to the schema for an OGC API Features collectionId
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

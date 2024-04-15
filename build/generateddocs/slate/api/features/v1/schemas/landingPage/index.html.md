@@ -17,7 +17,7 @@ meta:
 
 # Schema for landingPage `ogc.api.features.v1.schemas.landingPage`
 
-This building block corresponds to the schema for an OGC API Records landingPage
+This building block corresponds to the schema for an OGC API Features landingPage
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

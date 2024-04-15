@@ -3,7 +3,7 @@
 
 `ogc.api.features.v1.parameters.limit` *v0.1*
 
-This building block corresponds to the schema for an OGC API Records featureId
+This building block corresponds to the schema for an OGC API Features featureId
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
