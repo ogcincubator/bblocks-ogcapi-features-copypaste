@@ -28,8 +28,8 @@
     "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.json"
   },
-  "ldContext": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/context.jsonld",
   "sourceSchema": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/landingPage/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/landingPage/",
   "validationPassed": true,
   "annotatedSchema": "allOf:\n- $ref: https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml\n- properties:\n    links:\n      type: array\n      items:\n        $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml\n",

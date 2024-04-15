@@ -28,8 +28,8 @@
     "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.json"
   },
-  "ldContext": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/context.jsonld",
   "sourceSchema": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/collection/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/collection/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-ogcapi-features/blob/master/build/tests/api/features/v1/schemas/collection/",

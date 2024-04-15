@@ -312,9 +312,6 @@
             <a href="#schema-for-datetime-ogc-api-features-v1-parameters-datetime" class="toc-h1 toc-link" data-title="Schema for datetime ogc.api.features.v1.parameters.datetime">Schema for datetime <code>ogc.api.features.v1.parameters.datetime</code></a>
           </li>
           <li>
-            <a href="#json-schema" class="toc-h1 toc-link" data-title="JSON Schema">JSON Schema</a>
-          </li>
-          <li>
             <a href="#references" class="toc-h1 toc-link" data-title="References">References</a>
           </li>
           <li>
@@ -341,51 +338,6 @@
 <aside class="success">
 This building block is <strong>valid</strong>
 </aside>
-<h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">name</span><span class="pi">:</span> <span class="s">datetime</span>
-<span class="na">in</span><span class="pi">:</span> <span class="s">query</span>
-<span class="na">description</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Either</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">date-time</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">an</span><span class="nv"> </span><span class="s">interval.</span><span class="nv"> </span><span class="s">Date</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">time</span><span class="nv"> </span><span class="s">expressions</span><span class="nv"> </span><span class="s">adhere</span>
-  <span class="s">to</span><span class="nv"> </span><span class="s">RFC</span><span class="nv"> </span><span class="s">3339.</span>
-
-  <span class="s">Intervals</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">bounded</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">half-bounded</span><span class="nv"> </span><span class="s">(double-dots</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">start</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">end).</span>
-
-
-  <span class="s">Examples:</span>
-
-
-  <span class="s">*</span><span class="nv"> </span><span class="s">A</span><span class="nv"> </span><span class="s">date-time:</span><span class="nv"> </span><span class="s">"2018-02-12T23:20:50Z"</span>
-
-  <span class="s">*</span><span class="nv"> </span><span class="s">A</span><span class="nv"> </span><span class="s">bounded</span><span class="nv"> </span><span class="s">interval:</span><span class="nv"> </span><span class="s">"2018-02-12T00:00:00Z/2018-03-18T12:31:12Z"</span>
-
-  <span class="s">*</span><span class="nv"> </span><span class="s">Half-bounded</span><span class="nv"> </span><span class="s">intervals:</span><span class="nv"> </span><span class="s">"2018-02-12T00:00:00Z/.."</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">"../2018-03-18T12:31:12Z"</span>
-
-
-  <span class="s">Only</span><span class="nv"> </span><span class="s">features</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">temporal</span><span class="nv"> </span><span class="s">property</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">intersects</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">value</span><span class="nv"> </span><span class="s">of</span>
-
-  <span class="s">`datetime`</span><span class="nv"> </span><span class="s">are</span><span class="nv"> </span><span class="s">selected.</span>
-
-
-  <span class="s">If</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">feature</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">multiple</span><span class="nv"> </span><span class="s">temporal</span><span class="nv"> </span><span class="s">properties,</span><span class="nv"> </span><span class="s">it</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">decision</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span>
-
-  <span class="s">server</span><span class="nv"> </span><span class="s">whether</span><span class="nv"> </span><span class="s">only</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">single</span><span class="nv"> </span><span class="s">temporal</span><span class="nv"> </span><span class="s">property</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">used</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">determine</span>
-
-  <span class="s">the</span><span class="nv"> </span><span class="s">extent</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">all</span><span class="nv"> </span><span class="s">relevant</span><span class="nv"> </span><span class="s">temporal</span><span class="nv"> </span><span class="s">properties.'</span>
-<span class="na">required</span><span class="pi">:</span> <span class="no">false</span>
-<span class="na">schema</span><span class="pi">:</span>
-  <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
-<span class="na">style</span><span class="pi">:</span> <span class="s">form</span>
-<span class="na">explode</span><span class="pi">:</span> <span class="no">false</span>
-
-</code></pre></div>
-<blockquote>
-<p><a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-ogcapi-features%2Fbuild%2Fannotated%2Fapi%2Ffeatures%2Fv1%2Fparameters%2Fdatetime%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a></p>
-</blockquote>
-
-<p>Links to the schema:</p>
-
-<ul>
-<li>YAML version: <a href="https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/datetime/schema.yaml" target="_blank">https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/datetime/schema.yaml</a></li>
-<li>JSON version: <a href="https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/datetime/schema.json" target="_blank">https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/datetime/schema.json</a></li>
-</ul>
 <h1 id='references'>References</h1>
 <ul>
 <li><a href="https://docs.ogc.org/is/17-069r4/17-069r4.html">OGC API Features - Part 1 - Core corrigendum</a></li>

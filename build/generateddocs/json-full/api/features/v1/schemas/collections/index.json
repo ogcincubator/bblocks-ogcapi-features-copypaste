@@ -22,15 +22,15 @@
   "abstract": "This building block corresponds to the schema for an OGC API Features collections",
   "shaclRules": {},
   "dependsOn": [
-    "ogc.api.features.v1.schemas.collection",
-    "ogc.ogc-utils.json-link"
+    "ogc.ogc-utils.json-link",
+    "ogc.api.features.v1.schemas.collection"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/schema.json"
   },
-  "ldContext": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/context.jsonld",
   "sourceSchema": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/collections/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/collections/",
   "validationPassed": false,
   "testOutputs": "https://github.com/ogcincubator/bblocks-ogcapi-features/blob/master/build/tests/api/features/v1/schemas/collections/",
