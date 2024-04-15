@@ -19,9 +19,10 @@
     "ogcapi-features",
     "features"
   ],
-  "openapi-document": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/limit.yaml",
+  "openAPIDocument": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/featureId/openapi.yaml",
   "abstract": "This building block corresponds to the schema for an OGC API Features featureId",
   "shaclRules": {},
+  "sourceOpenAPIDocument": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/limit.yaml",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/parameters/featureId/",
   "validationPassed": true,
   "annotatedSchema": null,

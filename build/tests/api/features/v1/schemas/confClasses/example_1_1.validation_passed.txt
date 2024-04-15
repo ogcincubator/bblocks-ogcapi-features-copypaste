@@ -1,5 +1,5 @@
 Validation report for ogc.api.features.v1.schemas.confClasses - Schema for confClasses
-Generated 2024-04-15T12:45:21.076219+00:00
+Generated 2024-04-15T14:18:34.667133+00:00
 === Files ===
 Using example_1_1.json from examples
 === End Files ===

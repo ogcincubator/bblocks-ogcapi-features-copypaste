@@ -105,12 +105,12 @@
   ],
   "name": "Building Blocks - OGC API Features",
   "abstract": "This register will contain building blocks for OGC API Features.\n",
-  "modified": "2024-04-15T12:45:17.578634",
+  "modified": "2024-04-15T14:18:31.729295",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"fc40414747182fc784453da4f97644f8e992eff7",
-      "shortCommitId": "\"fc4041",
-      "date": "2024-04-15T12:42:47+00:00\""
+      "commitId": "\"17e9e5b18d1c828b031e9a0059d647af8b335463",
+      "shortCommitId": "\"17e9e5",
+      "date": "2024-04-15T14:15:24+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-features",
@@ -127,6 +127,211 @@
   ],
   "skos:prefLabel": "Building Blocks - OGC API Features",
   "hasConcepts": [
+    {
+      "itemIdentifier": "ogc.api.features.v1.schemas.extent",
+      "name": "Schema for extent",
+      "status": "under-development",
+      "dateTimeAddition": "2024-03-22T11:40:00+01:00",
+      "itemClass": "schema",
+      "register": "ogcapi-features",
+      "version": "0.1",
+      "dateOfLastChange": "2024-04-15",
+      "sources": [
+        {
+          "title": "OGC API Features - Part 1 - Core corrigendum",
+          "link": "https://docs.ogc.org/is/17-069r4/17-069r4.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-features",
+        "features"
+      ],
+      "abstract": "This building block corresponds to the schema for an OGC API Features extent",
+      "shaclRules": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/extent/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/extent/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/extent/schema.yaml",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/extent/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/extent/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/extent/index.json"
+        },
+        "slate": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/extent/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.extent"
+        }
+      },
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    },
+    {
+      "itemIdentifier": "ogc.api.features.v1.schemas.timeStamp",
+      "name": "Schema for timeStamp",
+      "status": "under-development",
+      "dateTimeAddition": "2024-03-22T11:40:00+01:00",
+      "itemClass": "datatype",
+      "register": "ogcapi-features",
+      "version": "0.1",
+      "dateOfLastChange": "2024-04-15",
+      "sources": [
+        {
+          "title": "OGC API Features - Part 1 - Core corrigendum",
+          "link": "https://docs.ogc.org/is/17-069r4/17-069r4.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-features",
+        "features"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/timeStamp/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/timeStamp/schema.json"
+      },
+      "abstract": "This property indicates the time and date when the response was generated",
+      "shaclRules": {},
+      "sourceSchema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/timeStamp.yaml",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/timeStamp/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/timeStamp/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/timeStamp/index.json"
+        },
+        "slate": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/timeStamp/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.timeStamp"
+        }
+      },
+      "@type": [
+        "bblocks:Datatype",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    },
+    {
+      "itemIdentifier": "ogc.api.features.v1.parameters.collectionId",
+      "name": "Schema for collectionId",
+      "status": "under-development",
+      "dateTimeAddition": "2024-03-22T11:40:00+01:00",
+      "itemClass": "parameter",
+      "register": "ogcapi-features",
+      "version": "0.1",
+      "dateOfLastChange": "2024-04-15",
+      "sources": [
+        {
+          "title": "OGC API Features - Part 1 - Core corrigendum",
+          "link": "https://docs.ogc.org/is/17-069r4/17-069r4.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-features",
+        "features"
+      ],
+      "openAPIDocument": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/collectionId/openapi.yaml",
+      "abstract": "This building block corresponds to the schema for an OGC API Features collectionId",
+      "shaclRules": {},
+      "sourceOpenAPIDocument": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/collectionId.yaml",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/parameters/collectionId/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/parameters/collectionId/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/parameters/collectionId/index.json"
+        },
+        "slate": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/parameters/collectionId/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.parameters.collectionId"
+        }
+      },
+      "@type": [
+        "bblocks:Parameter",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    },
+    {
+      "itemIdentifier": "ogc.api.features.v1.schemas.numberMatched",
+      "name": "Schema for numberMatched",
+      "status": "under-development",
+      "dateTimeAddition": "2024-03-22T11:40:00+01:00",
+      "itemClass": "datatype",
+      "register": "ogcapi-features",
+      "version": "0.1",
+      "dateOfLastChange": "2024-04-15",
+      "sources": [
+        {
+          "title": "OGC API Features - Part 1 - Core corrigendum",
+          "link": "https://docs.ogc.org/is/17-069r4/17-069r4.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-features",
+        "features"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberMatched/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberMatched/schema.json"
+      },
+      "abstract": "The number of features of the feature type that match the selection parameters like `bbox`",
+      "shaclRules": {},
+      "sourceSchema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/numberMatched.yaml",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/numberMatched/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/numberMatched/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/numberMatched/index.json"
+        },
+        "slate": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/numberMatched/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.numberMatched"
+        }
+      },
+      "@type": [
+        "bblocks:Datatype",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    },
     {
       "itemIdentifier": "ogc.api.features.v1.parameters.featureId",
       "name": "Schema for limit",
@@ -146,9 +351,10 @@
         "ogcapi-features",
         "features"
       ],
-      "openapi-document": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/limit.yaml",
+      "openAPIDocument": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/featureId/openapi.yaml",
       "abstract": "This building block corresponds to the schema for an OGC API Features featureId",
       "shaclRules": {},
+      "sourceOpenAPIDocument": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/limit.yaml",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/parameters/featureId/",
       "validationPassed": true,
       "documentation": {
@@ -171,6 +377,58 @@
       },
       "@type": [
         "bblocks:Parameter",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    },
+    {
+      "itemIdentifier": "ogc.api.features.v1.schemas.exception",
+      "name": "Schema for exception",
+      "status": "under-development",
+      "dateTimeAddition": "2024-03-22T11:40:00+01:00",
+      "itemClass": "schema",
+      "register": "ogcapi-features",
+      "version": "0.1",
+      "dateOfLastChange": "2024-04-15",
+      "sources": [
+        {
+          "title": "OGC API Features - Part 1 - Core corrigendum",
+          "link": "https://docs.ogc.org/is/17-069r4/17-069r4.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-features",
+        "features"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/exception/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/exception/schema.json"
+      },
+      "abstract": "This building block corresponds to the schema for an OGC API Features exception",
+      "shaclRules": {},
+      "sourceSchema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/exception.yaml",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/exception/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/exception/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/exception/index.json"
+        },
+        "slate": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/exception/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.exception"
+        }
+      },
+      "@type": [
+        "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset"
       ]
@@ -224,106 +482,6 @@
       },
       "@type": [
         "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ]
-    },
-    {
-      "itemIdentifier": "ogc.api.features.v1.parameters.datetime",
-      "name": "Schema for datetime",
-      "status": "under-development",
-      "dateTimeAddition": "2024-03-22T11:40:00+01:00",
-      "itemClass": "parameter",
-      "register": "ogcapi-features",
-      "version": "0.1",
-      "dateOfLastChange": "2024-04-15",
-      "sources": [
-        {
-          "title": "OGC API Features - Part 1 - Core corrigendum",
-          "link": "https://docs.ogc.org/is/17-069r4/17-069r4.html"
-        }
-      ],
-      "tags": [
-        "ogcapi-features",
-        "features"
-      ],
-      "openapi-document": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/datetime.yaml",
-      "abstract": "This building block corresponds to the schema for an OGC API Features datetime",
-      "shaclRules": {},
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/parameters/datetime/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/parameters/datetime/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/parameters/datetime/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/parameters/datetime/"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.parameters.datetime"
-        }
-      },
-      "@type": [
-        "bblocks:Parameter",
-        "skos:Concept",
-        "dcat:Dataset"
-      ]
-    },
-    {
-      "itemIdentifier": "ogc.api.features.v1.schemas.timeStamp",
-      "name": "Schema for timeStamp",
-      "status": "under-development",
-      "dateTimeAddition": "2024-03-22T11:40:00+01:00",
-      "itemClass": "datatype",
-      "register": "ogcapi-features",
-      "version": "0.1",
-      "dateOfLastChange": "2024-04-15",
-      "sources": [
-        {
-          "title": "OGC API Features - Part 1 - Core corrigendum",
-          "link": "https://docs.ogc.org/is/17-069r4/17-069r4.html"
-        }
-      ],
-      "tags": [
-        "ogcapi-features",
-        "features"
-      ],
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/timeStamp/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/timeStamp/schema.json"
-      },
-      "abstract": "This property indicates the time and date when the response was generated",
-      "shaclRules": {},
-      "sourceSchema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/timeStamp.yaml",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/timeStamp/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/timeStamp/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/timeStamp/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/timeStamp/"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.timeStamp"
-        }
-      },
-      "@type": [
-        "bblocks:Datatype",
         "skos:Concept",
         "dcat:Dataset"
       ]
@@ -399,9 +557,10 @@
         "ogcapi-features",
         "features"
       ],
-      "openapi-document": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/featureId.yaml",
+      "openAPIDocument": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/limit/openapi.yaml",
       "abstract": "This building block corresponds to the schema for an OGC API Features featureId",
       "shaclRules": {},
+      "sourceOpenAPIDocument": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/featureId.yaml",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/parameters/limit/",
       "validationPassed": true,
       "documentation": {
@@ -429,164 +588,8 @@
       ]
     },
     {
-      "itemIdentifier": "ogc.api.features.v1.schemas.exception",
-      "name": "Schema for exception",
-      "status": "under-development",
-      "dateTimeAddition": "2024-03-22T11:40:00+01:00",
-      "itemClass": "schema",
-      "register": "ogcapi-features",
-      "version": "0.1",
-      "dateOfLastChange": "2024-04-15",
-      "sources": [
-        {
-          "title": "OGC API Features - Part 1 - Core corrigendum",
-          "link": "https://docs.ogc.org/is/17-069r4/17-069r4.html"
-        }
-      ],
-      "tags": [
-        "ogcapi-features",
-        "features"
-      ],
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/exception/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/exception/schema.json"
-      },
-      "abstract": "This building block corresponds to the schema for an OGC API Features exception",
-      "shaclRules": {},
-      "sourceSchema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/exception.yaml",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/exception/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/exception/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/exception/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/exception/"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.exception"
-        }
-      },
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ]
-    },
-    {
-      "itemIdentifier": "ogc.api.features.v1.schemas.numberMatched",
-      "name": "Schema for numberMatched",
-      "status": "under-development",
-      "dateTimeAddition": "2024-03-22T11:40:00+01:00",
-      "itemClass": "datatype",
-      "register": "ogcapi-features",
-      "version": "0.1",
-      "dateOfLastChange": "2024-04-15",
-      "sources": [
-        {
-          "title": "OGC API Features - Part 1 - Core corrigendum",
-          "link": "https://docs.ogc.org/is/17-069r4/17-069r4.html"
-        }
-      ],
-      "tags": [
-        "ogcapi-features",
-        "features"
-      ],
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberMatched/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberMatched/schema.json"
-      },
-      "abstract": "The number of features of the feature type that match the selection parameters like `bbox`",
-      "shaclRules": {},
-      "sourceSchema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/numberMatched.yaml",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/numberMatched/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/numberMatched/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/numberMatched/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/numberMatched/"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.numberMatched"
-        }
-      },
-      "@type": [
-        "bblocks:Datatype",
-        "skos:Concept",
-        "dcat:Dataset"
-      ]
-    },
-    {
-      "itemIdentifier": "ogc.api.features.v1.schemas.extent",
-      "name": "Schema for extent",
-      "status": "under-development",
-      "dateTimeAddition": "2024-03-22T11:40:00+01:00",
-      "itemClass": "schema",
-      "register": "ogcapi-features",
-      "version": "0.1",
-      "dateOfLastChange": "2024-04-15",
-      "sources": [
-        {
-          "title": "OGC API Features - Part 1 - Core corrigendum",
-          "link": "https://docs.ogc.org/is/17-069r4/17-069r4.html"
-        }
-      ],
-      "tags": [
-        "ogcapi-features",
-        "features"
-      ],
-      "abstract": "This building block corresponds to the schema for an OGC API Features extent",
-      "shaclRules": {},
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/extent/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/extent/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/extent/schema.yaml",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/schemas/extent/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/extent/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/extent/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/extent/"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.extent"
-        }
-      },
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ]
-    },
-    {
-      "itemIdentifier": "ogc.api.features.v1.parameters.collectionId",
-      "name": "Schema for collectionId",
+      "itemIdentifier": "ogc.api.features.v1.parameters.datetime",
+      "name": "Schema for datetime",
       "status": "under-development",
       "dateTimeAddition": "2024-03-22T11:40:00+01:00",
       "itemClass": "parameter",
@@ -603,27 +606,28 @@
         "ogcapi-features",
         "features"
       ],
-      "openapi-document": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/collectionId.yaml",
-      "abstract": "This building block corresponds to the schema for an OGC API Features collectionId",
+      "openAPIDocument": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/datetime/openapi.yaml",
+      "abstract": "This building block corresponds to the schema for an OGC API Features datetime",
       "shaclRules": {},
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/parameters/collectionId/",
+      "sourceOpenAPIDocument": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/datetime.yaml",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/parameters/datetime/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/parameters/collectionId/index.md"
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/parameters/datetime/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/parameters/collectionId/index.json"
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/parameters/datetime/index.json"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/parameters/collectionId/"
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/parameters/datetime/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.parameters.collectionId"
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.parameters.datetime"
         }
       },
       "@type": [
@@ -767,8 +771,8 @@
       "abstract": "This building block corresponds to the schema for an OGC API Features collections",
       "shaclRules": {},
       "dependsOn": [
-        "ogc.ogc-utils.json-link",
-        "ogc.api.features.v1.schemas.collection"
+        "ogc.api.features.v1.schemas.collection",
+        "ogc.ogc-utils.json-link"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/schema.yaml",
@@ -826,22 +830,22 @@
       "abstract": "This building block corresponds to OGC API Features",
       "shaclRules": {},
       "dependsOn": [
-        "ogc.api.features.v1.parameters.featureId",
-        "ogc.api.features.v1.schemas.confClasses",
-        "ogc.api.features.v1.parameters.datetime",
-        "ogc.geo.features.featureCollection",
-        "ogc.api.features.v1.schemas.collection",
-        "ogc.api.features.v1.schemas.timeStamp",
-        "ogc.api.features.v1.schemas.numberReturned",
-        "ogc.api.features.v1.parameters.limit",
-        "ogc.api.features.v1.schemas.landingPage",
         "ogc.api.features.v1.schemas.collections",
-        "ogc.api.features.v1.schemas.exception",
-        "ogc.api.features.v1.schemas.numberMatched",
-        "ogc.geo.features.feature",
+        "ogc.api.features.v1.schemas.landingPage",
         "ogc.geo.common.parameters.bbox",
         "ogc.api.features.v1.schemas.extent",
-        "ogc.api.features.v1.parameters.collectionId"
+        "ogc.api.features.v1.schemas.timeStamp",
+        "ogc.api.features.v1.parameters.collectionId",
+        "ogc.geo.features.featureCollection",
+        "ogc.api.features.v1.schemas.numberMatched",
+        "ogc.api.features.v1.parameters.featureId",
+        "ogc.geo.features.feature",
+        "ogc.api.features.v1.schemas.exception",
+        "ogc.api.features.v1.schemas.confClasses",
+        "ogc.api.features.v1.schemas.collection",
+        "ogc.api.features.v1.schemas.numberReturned",
+        "ogc.api.features.v1.parameters.limit",
+        "ogc.api.features.v1.parameters.datetime"
       ],
       "sourceOpenAPIDocument": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/api/openapi.yaml",
       "openAPIDocument": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/api/openapi.yaml",
