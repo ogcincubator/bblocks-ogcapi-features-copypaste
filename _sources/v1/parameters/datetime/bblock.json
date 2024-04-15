@@ -17,5 +17,5 @@
     "features"
   ],
   "schema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/datetime.yaml",
-  "abstract": "This building block corresponds to the schema for an OGC API Records datetime"
+  "abstract": "This building block corresponds to the schema for an OGC API Features datetime"
 }

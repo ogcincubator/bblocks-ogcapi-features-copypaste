@@ -16,5 +16,5 @@
     "ogcapi-features",
     "features"
   ],
-  "abstract": "This building block corresponds to the schema for an OGC API Records collections"
+  "abstract": "This building block corresponds to the schema for an OGC API Features collections"
 }

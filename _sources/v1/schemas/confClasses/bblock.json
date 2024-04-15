@@ -17,5 +17,5 @@
     "features"
   ],
   "schema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/confClasses.yaml",
-  "abstract": "This building block corresponds to the schema for an OGC API Records confClasses"
+  "abstract": "This building block corresponds to the schema for an OGC API Features confClasses"
 }
