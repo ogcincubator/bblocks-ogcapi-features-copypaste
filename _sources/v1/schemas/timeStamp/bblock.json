@@ -17,5 +17,5 @@
     "features"
   ],
   "schema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/timeStamp.yaml",
-  "abstract": "This building block corresponds to the schema for an OGC API Records timeStamp"
+  "abstract": "This property indicates the time and date when the response was generated"
 }

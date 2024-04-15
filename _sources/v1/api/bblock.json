@@ -1,8 +1,8 @@
 {
-  "name": "Schema for numberReturned",
+  "name": "OGC API Features",
   "status": "under-development",
   "dateTimeAddition": "2024-03-22T11:40:00+01:00",
-  "itemClass": "datatype",
+  "itemClass": "api",
   "register": "ogcapi-features",
   "version": "0.1",
   "dateOfLastChange": "2024-03-22",
@@ -16,6 +16,6 @@
     "ogcapi-features",
     "features"
   ],
-  "schema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/numberReturned.yaml",
-  "abstract": "The number of features in the feature collection"
+  "schema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/featureId.yaml",
+  "abstract": "This building block corresponds to OGC API Records"
 }

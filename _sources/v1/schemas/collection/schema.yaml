@@ -1,3 +1,8 @@
 allOf:
   - $ref: https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collection.yaml
-  - $ref: bblocks://ogc.geo.features.featureCollection
+  - type: object
+    properties:
+      links:
+        type: array
+        items:
+          $ref: bblocks://ogc.ogc-utils.json-link
