@@ -16,6 +16,6 @@
     "ogcapi-features",
     "features"
   ],
-  "schema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/featureId.yaml",
+  "openapi-document": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/featureId.yaml",
   "abstract": "This building block corresponds to the schema for an OGC API Features featureId"
 }
