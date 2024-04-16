@@ -1,9 +1,9 @@
 
-# Schema for featureId (Parameter)
+# limit parameter (Parameter)
 
 `ogc.api.features.v1.parameters.limit` *v0.1*
 
-This building block corresponds to the schema for an OGC API Features featureId
+This building block corresponds to the schema for an OGC API Features limit
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

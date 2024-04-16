@@ -1,9 +1,9 @@
 ---
-title: Schema for collectionId (Parameter)
+title: collectionId parameter (Parameter)
 
 toc_footers:
   - Version 0.1
-  - <a href='#'>Schema for collectionId</a>
+  - <a href='#'>collectionId parameter</a>
   - <a href='https://blocks.ogc.org/register.html'>Building Blocks register</a>
 
 search: true
@@ -11,11 +11,11 @@ search: true
 code_clipboard: true
 
 meta:
-  - name: Schema for collectionId (Parameter)
+  - name: collectionId parameter (Parameter)
 ---
 
 
-# Schema for collectionId `ogc.api.features.v1.parameters.collectionId`
+# collectionId parameter `ogc.api.features.v1.parameters.collectionId`
 
 This building block corresponds to the schema for an OGC API Features collectionId
 

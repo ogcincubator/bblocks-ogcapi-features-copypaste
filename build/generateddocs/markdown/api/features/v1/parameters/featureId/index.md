@@ -1,5 +1,5 @@
 
-# Schema for limit (Parameter)
+# featureId parameter (Parameter)
 
 `ogc.api.features.v1.parameters.featureId` *v0.1*
 

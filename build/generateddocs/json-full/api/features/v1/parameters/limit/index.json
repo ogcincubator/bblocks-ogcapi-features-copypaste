@@ -2,13 +2,13 @@
 
 {
   "itemIdentifier": "ogc.api.features.v1.parameters.limit",
-  "name": "Schema for featureId",
+  "name": "limit parameter",
   "status": "under-development",
   "dateTimeAddition": "2024-03-22T11:40:00+01:00",
   "itemClass": "parameter",
   "register": "ogcapi-features",
   "version": "0.1",
-  "dateOfLastChange": "2024-04-15",
+  "dateOfLastChange": "2024-04-16",
   "sources": [
     {
       "title": "OGC API Features - Part 1 - Core corrigendum",
@@ -20,9 +20,9 @@
     "features"
   ],
   "openAPIDocument": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/limit/openapi.yaml",
-  "abstract": "This building block corresponds to the schema for an OGC API Features featureId",
+  "abstract": "This building block corresponds to the schema for an OGC API Features limit",
   "shaclRules": {},
-  "sourceOpenAPIDocument": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/featureId.yaml",
+  "sourceOpenAPIDocument": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/limit.yaml",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-features/_sources/v1/parameters/limit/",
   "validationPassed": true,
   "annotatedSchema": null,

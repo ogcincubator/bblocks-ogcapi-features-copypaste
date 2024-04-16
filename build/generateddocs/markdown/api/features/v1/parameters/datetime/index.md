@@ -1,5 +1,5 @@
 
-# Schema for datetime (Parameter)
+# datetime parameter (Parameter)
 
 `ogc.api.features.v1.parameters.datetime` *v0.1*
 

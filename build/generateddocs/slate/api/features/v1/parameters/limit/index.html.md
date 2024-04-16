@@ -1,9 +1,9 @@
 ---
-title: Schema for featureId (Parameter)
+title: limit parameter (Parameter)
 
 toc_footers:
   - Version 0.1
-  - <a href='#'>Schema for featureId</a>
+  - <a href='#'>limit parameter</a>
   - <a href='https://blocks.ogc.org/register.html'>Building Blocks register</a>
 
 search: true
@@ -11,13 +11,13 @@ search: true
 code_clipboard: true
 
 meta:
-  - name: Schema for featureId (Parameter)
+  - name: limit parameter (Parameter)
 ---
 
 
-# Schema for featureId `ogc.api.features.v1.parameters.limit`
+# limit parameter `ogc.api.features.v1.parameters.limit`
 
-This building block corresponds to the schema for an OGC API Features featureId
+This building block corresponds to the schema for an OGC API Features limit
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

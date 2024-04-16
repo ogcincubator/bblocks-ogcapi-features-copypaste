@@ -1,9 +1,9 @@
 ---
-title: Schema for datetime (Parameter)
+title: datetime parameter (Parameter)
 
 toc_footers:
   - Version 0.1
-  - <a href='#'>Schema for datetime</a>
+  - <a href='#'>datetime parameter</a>
   - <a href='https://blocks.ogc.org/register.html'>Building Blocks register</a>
 
 search: true
@@ -11,11 +11,11 @@ search: true
 code_clipboard: true
 
 meta:
-  - name: Schema for datetime (Parameter)
+  - name: datetime parameter (Parameter)
 ---
 
 
-# Schema for datetime `ogc.api.features.v1.parameters.datetime`
+# datetime parameter `ogc.api.features.v1.parameters.datetime`
 
 This building block corresponds to the schema for an OGC API Features datetime
 

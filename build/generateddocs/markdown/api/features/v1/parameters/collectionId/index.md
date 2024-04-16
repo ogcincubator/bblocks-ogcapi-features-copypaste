@@ -1,5 +1,5 @@
 
-# Schema for collectionId (Parameter)
+# collectionId parameter (Parameter)
 
 `ogc.api.features.v1.parameters.collectionId` *v0.1*
 
