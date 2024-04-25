@@ -341,16 +341,116 @@
 <aside class="success">
 This building block is <strong>valid</strong>
 </aside>
-<h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">allOf</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/extent.yaml</span>
-<span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
-    <span class="na">spatial</span><span class="pi">:</span>
-      <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
-      <span class="na">properties</span><span class="pi">:</span>
-        <span class="na">bbox</span><span class="pi">:</span>
+<h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$comment</span><span class="pi">:</span> <span class="s">Adapted from https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/extent.yaml</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s1">'</span><span class="s">The</span><span class="nv"> </span><span class="s">extent</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">features</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">collection.</span><span class="nv"> </span><span class="s">In</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Core</span><span class="nv"> </span><span class="s">only</span><span class="nv"> </span><span class="s">spatial</span>
+  <span class="s">and</span><span class="nv"> </span><span class="s">temporal</span>
+
+  <span class="s">extents</span><span class="nv"> </span><span class="s">are</span><span class="nv"> </span><span class="s">specified.</span><span class="nv"> </span><span class="s">Extensions</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">add</span><span class="nv"> </span><span class="s">additional</span><span class="nv"> </span><span class="s">members</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">represent</span><span class="nv"> </span><span class="s">other</span>
+
+  <span class="s">extents,</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">example,</span><span class="nv"> </span><span class="s">thermal</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">pressure</span><span class="nv"> </span><span class="s">ranges.</span>
+
+
+  <span class="s">An</span><span class="nv"> </span><span class="s">array</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">extents</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">provided</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">each</span><span class="nv"> </span><span class="s">extent</span><span class="nv"> </span><span class="s">type</span><span class="nv"> </span><span class="s">(spatial,</span><span class="nv"> </span><span class="s">temporal).</span><span class="nv"> </span><span class="s">The</span><span class="nv"> </span><span class="s">first</span>
+  <span class="s">item</span>
+
+  <span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">array</span><span class="nv"> </span><span class="s">describes</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">overall</span><span class="nv"> </span><span class="s">extent</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">data.</span><span class="nv"> </span><span class="s">All</span><span class="nv"> </span><span class="s">subsequent</span><span class="nv"> </span><span class="s">items</span><span class="nv"> </span><span class="s">describe</span>
+  <span class="s">more</span>
+
+  <span class="s">precise</span><span class="nv"> </span><span class="s">extents,</span><span class="nv"> </span><span class="s">e.g.,</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">clusters</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">data.</span><span class="nv"> </span><span class="s">Clients</span><span class="nv"> </span><span class="s">only</span><span class="nv"> </span><span class="s">interested</span><span class="nv"> </span><span class="s">in</span>
+  <span class="s">the</span>
+
+  <span class="s">overall</span><span class="nv"> </span><span class="s">extent</span><span class="nv"> </span><span class="s">will</span><span class="nv"> </span><span class="s">only</span><span class="nv"> </span><span class="s">need</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">access</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">first</span><span class="nv"> </span><span class="s">extent</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">array.'</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
+<span class="na">properties</span><span class="pi">:</span>
+  <span class="na">spatial</span><span class="pi">:</span>
+    <span class="na">description</span><span class="pi">:</span> <span class="s">The spatial extent of the features in the collection.</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
+    <span class="na">properties</span><span class="pi">:</span>
+      <span class="na">bbox</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+        <span class="na">items</span><span class="pi">:</span>
+          <span class="na">ref</span><span class="pi">:</span> <span class="s">bblocks://ogc.geo.common.data_types.bounding_box</span>
+      <span class="na">crs</span><span class="pi">:</span>
+        <span class="na">description</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Coordinate</span><span class="nv"> </span><span class="s">reference</span><span class="nv"> </span><span class="s">system</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">coordinates</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">spatial</span>
+          <span class="s">extent</span>
+
+          <span class="s">(property</span><span class="nv"> </span><span class="s">`bbox`).</span><span class="nv"> </span><span class="s">The</span><span class="nv"> </span><span class="s">default</span><span class="nv"> </span><span class="s">reference</span><span class="nv"> </span><span class="s">system</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">WGS</span><span class="nv"> </span><span class="s">84</span><span class="nv"> </span><span class="s">longitude/latitude.</span>
+
+          <span class="s">In</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Core</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">only</span><span class="nv"> </span><span class="s">other</span><span class="nv"> </span><span class="s">supported</span><span class="nv"> </span><span class="s">coordinate</span><span class="nv"> </span><span class="s">reference</span><span class="nv"> </span><span class="s">system</span><span class="nv"> </span><span class="s">is</span>
+
+          <span class="s">WGS</span><span class="nv"> </span><span class="s">84</span><span class="nv"> </span><span class="s">longitude/latitude/ellipsoidal</span><span class="nv"> </span><span class="s">height</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">coordinates</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">height.</span>
+
+          <span class="s">Extensions</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">support</span><span class="nv"> </span><span class="s">additional</span><span class="nv"> </span><span class="s">coordinate</span><span class="nv"> </span><span class="s">reference</span><span class="nv"> </span><span class="s">systems</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">add</span>
+
+          <span class="s">additional</span><span class="nv"> </span><span class="s">enum</span><span class="nv"> </span><span class="s">values.'</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+        <span class="na">enum</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">http://www.opengis.net/def/crs/OGC/1.3/CRS84</span>
+        <span class="pi">-</span> <span class="s">http://www.opengis.net/def/crs/OGC/0/CRS84h</span>
+        <span class="na">default</span><span class="pi">:</span> <span class="s">http://www.opengis.net/def/crs/OGC/1.3/CRS84</span>
+  <span class="na">temporal</span><span class="pi">:</span>
+    <span class="na">description</span><span class="pi">:</span> <span class="s">The temporal extent of the features in the collection.</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
+    <span class="na">properties</span><span class="pi">:</span>
+      <span class="na">interval</span><span class="pi">:</span>
+        <span class="na">description</span><span class="pi">:</span> <span class="s1">'</span><span class="s">One</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">more</span><span class="nv"> </span><span class="s">time</span><span class="nv"> </span><span class="s">intervals</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">describe</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">temporal</span><span class="nv"> </span><span class="s">extent</span>
+          <span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">dataset.</span>
+
+          <span class="s">In</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Core</span><span class="nv"> </span><span class="s">only</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">single</span><span class="nv"> </span><span class="s">time</span><span class="nv"> </span><span class="s">interval</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">supported.</span>
+
+
+          <span class="s">Extensions</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">support</span><span class="nv"> </span><span class="s">multiple</span><span class="nv"> </span><span class="s">intervals.</span>
+
+          <span class="s">The</span><span class="nv"> </span><span class="s">first</span><span class="nv"> </span><span class="s">time</span><span class="nv"> </span><span class="s">interval</span><span class="nv"> </span><span class="s">describes</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">overall</span>
+
+          <span class="s">temporal</span><span class="nv"> </span><span class="s">extent</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">data.</span><span class="nv"> </span><span class="s">All</span><span class="nv"> </span><span class="s">subsequent</span><span class="nv"> </span><span class="s">time</span><span class="nv"> </span><span class="s">intervals</span><span class="nv"> </span><span class="s">describe</span>
+
+          <span class="s">more</span><span class="nv"> </span><span class="s">precise</span><span class="nv"> </span><span class="s">time</span><span class="nv"> </span><span class="s">intervals,</span><span class="nv"> </span><span class="s">e.g.,</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">clusters</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">data.</span>
+
+          <span class="s">Clients</span><span class="nv"> </span><span class="s">only</span><span class="nv"> </span><span class="s">interested</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">overall</span><span class="nv"> </span><span class="s">temporal</span><span class="nv"> </span><span class="s">extent</span><span class="nv"> </span><span class="s">will</span><span class="nv"> </span><span class="s">only</span><span class="nv"> </span><span class="s">need</span>
+
+          <span class="s">to</span><span class="nv"> </span><span class="s">access</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">first</span><span class="nv"> </span><span class="s">time</span><span class="nv"> </span><span class="s">interval</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">array</span><span class="nv"> </span><span class="s">(a</span><span class="nv"> </span><span class="s">pair</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">lower</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">upper</span>
+
+          <span class="s">bound</span><span class="nv"> </span><span class="s">instants).'</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+        <span class="na">minItems</span><span class="pi">:</span> <span class="m">1</span>
+        <span class="na">items</span><span class="pi">:</span>
+          <span class="na">description</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Begin</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">end</span><span class="nv"> </span><span class="s">times</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">time</span><span class="nv"> </span><span class="s">interval.</span><span class="nv"> </span><span class="s">The</span><span class="nv"> </span><span class="s">timestamps</span><span class="nv"> </span><span class="s">are</span>
+            <span class="s">in</span><span class="nv"> </span><span class="s">the</span>
+
+            <span class="s">temporal</span><span class="nv"> </span><span class="s">coordinate</span><span class="nv"> </span><span class="s">reference</span><span class="nv"> </span><span class="s">system</span><span class="nv"> </span><span class="s">specified</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">`trs`.</span><span class="nv"> </span><span class="s">By</span><span class="nv"> </span><span class="s">default</span>
+
+            <span class="s">this</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Gregorian</span><span class="nv"> </span><span class="s">calendar.</span>
+
+
+            <span class="s">The</span><span class="nv"> </span><span class="s">value</span><span class="nv"> </span><span class="s">`null`</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">start</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">end</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">supported</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">indicates</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">half-bounded</span>
+            <span class="s">interval.'</span>
           <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+          <span class="na">minItems</span><span class="pi">:</span> <span class="m">2</span>
+          <span class="na">maxItems</span><span class="pi">:</span> <span class="m">2</span>
           <span class="na">items</span><span class="pi">:</span>
-            <span class="na">ref</span><span class="pi">:</span> <span class="s">bblocks://ogc.geo.common.data_types.bounding_box</span>
+            <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+            <span class="na">format</span><span class="pi">:</span> <span class="s">date-time</span>
+            <span class="na">nullable</span><span class="pi">:</span> <span class="no">true</span>
+          <span class="na">example</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s1">'</span><span class="s">2011-11-11T12:22:11Z'</span>
+          <span class="pi">-</span> <span class="no">null</span>
+      <span class="na">trs</span><span class="pi">:</span>
+        <span class="na">description</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Coordinate</span><span class="nv"> </span><span class="s">reference</span><span class="nv"> </span><span class="s">system</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">coordinates</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">temporal</span>
+          <span class="s">extent</span>
+
+          <span class="s">(property</span><span class="nv"> </span><span class="s">`interval`).</span><span class="nv"> </span><span class="s">The</span><span class="nv"> </span><span class="s">default</span><span class="nv"> </span><span class="s">reference</span><span class="nv"> </span><span class="s">system</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Gregorian</span><span class="nv"> </span><span class="s">calendar.</span>
+
+          <span class="s">In</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Core</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">only</span><span class="nv"> </span><span class="s">supported</span><span class="nv"> </span><span class="s">temporal</span><span class="nv"> </span><span class="s">coordinate</span><span class="nv"> </span><span class="s">reference</span><span class="nv"> </span><span class="s">system.</span>
+
+          <span class="s">Extensions</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">support</span><span class="nv"> </span><span class="s">additional</span><span class="nv"> </span><span class="s">temporal</span><span class="nv"> </span><span class="s">coordinate</span><span class="nv"> </span><span class="s">reference</span><span class="nv"> </span><span class="s">systems</span>
+          <span class="s">and</span><span class="nv"> </span><span class="s">add</span>
+
+          <span class="s">additional</span><span class="nv"> </span><span class="s">enum</span><span class="nv"> </span><span class="s">values.'</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+        <span class="na">enum</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">http://www.opengis.net/def/uom/ISO-8601/0/Gregorian</span>
+        <span class="na">default</span><span class="pi">:</span> <span class="s">http://www.opengis.net/def/uom/ISO-8601/0/Gregorian</span>
 
 </code></pre></div>
 <blockquote>

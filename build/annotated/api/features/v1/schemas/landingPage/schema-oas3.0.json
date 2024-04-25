@@ -1,24 +1,7 @@
 {
   "x-defs": {
-    "ogc.api.features.v1.schemas.landingPage": {
-      "allOf": [
-        {
-          "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema-oas3.0.json#/x-defs/schemas.opengis.net_ogcapi_features_part1_1.0_openapi_schemas_landingPage.yaml"
-        },
-        {
-          "properties": {
-            "links": {
-              "type": "array",
-              "items": {
-                "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema-oas3.0.json#/x-defs/ogc.ogc-utils.json-link"
-              }
-            }
-          }
-        }
-      ],
-      "x-schema-source": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema-oas3.0.json"
-    },
-    "schemas.opengis.net_ogcapi_features_part1_1.0_openapi_schemas_landingPage.yaml": {
+    "_github_workspace_build_annotated_api_features_v1_schemas_landingPage_schema.json": {
+      "$comment": "Adapted from https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml",
       "type": "object",
       "required": [
         "links"
@@ -35,11 +18,11 @@
         "links": {
           "type": "array",
           "items": {
-            "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema-oas3.0.json#/x-defs/schemas.opengis.net_ogcapi_features_part1_1.0_openapi_schemas_link.yaml"
+            "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema-oas3.0.json#/x-defs/ogc.ogc-utils.json-link"
           }
         }
       },
-      "x-schema-source": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml"
+      "x-schema-source": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema-oas3.0.json"
     },
     "ogc.ogc-utils.json-link": {
       "description": "JSON Link",
@@ -88,44 +71,11 @@
       },
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
       "x-schema-source": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json"
-    },
-    "schemas.opengis.net_ogcapi_features_part1_1.0_openapi_schemas_link.yaml": {
-      "type": "object",
-      "required": [
-        "href",
-        "rel"
-      ],
-      "properties": {
-        "href": {
-          "type": "string",
-          "example": "http://data.example.com/buildings/123"
-        },
-        "rel": {
-          "type": "string",
-          "example": "alternate"
-        },
-        "type": {
-          "type": "string",
-          "example": "application/geo+json"
-        },
-        "hreflang": {
-          "type": "string",
-          "example": "en"
-        },
-        "title": {
-          "type": "string",
-          "example": "Trierer Strasse 70, 53115 Bonn"
-        },
-        "length": {
-          "type": "integer"
-        }
-      },
-      "x-schema-source": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/link.yaml"
     }
   },
   "allOf": [
     {
-      "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema-oas3.0.json#/x-defs/ogc.api.features.v1.schemas.landingPage"
+      "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema-oas3.0.json#/x-defs/_github_workspace_build_annotated_api_features_v1_schemas_landingPage_schema.json"
     }
   ]
 }

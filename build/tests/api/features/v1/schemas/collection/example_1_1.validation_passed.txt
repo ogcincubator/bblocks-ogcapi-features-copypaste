@@ -1,5 +1,5 @@
 Validation report for ogc.api.features.v1.schemas.collection - Schema for collection
-Generated 2024-04-16T07:58:43.628482+00:00
+Generated 2024-04-25T10:56:04.763188+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

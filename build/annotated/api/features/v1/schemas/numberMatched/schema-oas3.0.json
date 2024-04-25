@@ -1,6 +1,6 @@
 {
   "x-defs": {
-    "ogc.api.features.v1.schemas.numberMatched": {
+    "_github_workspace_build_annotated_api_features_v1_schemas_numberMatched_schema.json": {
       "description": "The number of features of the feature type that match the selection\nparameters like `bbox`.",
       "type": "integer",
       "minimum": 0,
@@ -10,7 +10,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberMatched/schema-oas3.0.json#/x-defs/ogc.api.features.v1.schemas.numberMatched"
+      "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberMatched/schema-oas3.0.json#/x-defs/_github_workspace_build_annotated_api_features_v1_schemas_numberMatched_schema.json"
     }
   ]
 }
