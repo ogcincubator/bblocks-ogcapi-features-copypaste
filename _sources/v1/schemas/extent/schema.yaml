@@ -18,7 +18,7 @@ properties:
       bbox:
         type: array
         items:
-          ref: bblocks://ogc.geo.common.data_types.bounding_box
+          $ref: bblocks://ogc.geo.common.data_types.bounding_box
       crs:
         description: |-
           Coordinate reference system of the coordinates in the spatial extent
