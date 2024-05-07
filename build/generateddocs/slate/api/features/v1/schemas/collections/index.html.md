@@ -440,7 +440,7 @@ Validation for this building block has <strong><a href="https://github.com/ogcin
 # JSON Schema
 
 ```yaml--schema
-$comment: https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collections.yaml
+$comment: Adapted from https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collections.yaml
 type: object
 properties:
   links:

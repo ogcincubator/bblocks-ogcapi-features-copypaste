@@ -12,7 +12,7 @@
             "bbox": {
               "type": "array",
               "items": {
-                "ref": "bblocks://ogc.geo.common.data_types.bounding_box"
+                "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/extent/schema-oas3.0.json#/x-defs/ogc.geo.common.data_types.bounding_box"
               }
             },
             "crs": {
@@ -62,6 +62,23 @@
         }
       },
       "x-schema-source": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/extent/schema-oas3.0.json"
+    },
+    "ogc.geo.common.data_types.bounding_box": {
+      "type": "array",
+      "oneOf": [
+        {
+          "minItems": 4,
+          "maxItems": 4
+        },
+        {
+          "minItems": 6,
+          "maxItems": 6
+        }
+      ],
+      "items": {
+        "type": "number"
+      },
+      "x-schema-source": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.json"
     }
   },
   "allOf": [

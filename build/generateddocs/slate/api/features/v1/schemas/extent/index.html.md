@@ -60,7 +60,7 @@ properties:
       bbox:
         type: array
         items:
-          ref: bblocks://ogc.geo.common.data_types.bounding_box
+          $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.yaml
       crs:
         description: 'Coordinate reference system of the coordinates in the spatial
           extent

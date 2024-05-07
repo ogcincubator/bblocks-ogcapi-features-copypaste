@@ -10,7 +10,7 @@
         "bbox": {
           "type": "array",
           "items": {
-            "ref": "bblocks://ogc.geo.common.data_types.bounding_box"
+            "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.json"
           }
         },
         "crs": {

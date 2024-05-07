@@ -402,7 +402,7 @@ This building block corresponds to the schema for an OGC API Features collection
 ## Schema
 
 ```yaml
-$comment: https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collections.yaml
+$comment: Adapted from https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collections.yaml
 type: object
 properties:
   links:
