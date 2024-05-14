@@ -38,9 +38,11 @@
             "minItems": 2,
             "maxItems": 2,
             "items": {
-              "type": "string",
-              "format": "date-time",
-              "nullable": true
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date-time"
             },
             "example": [
               "2011-11-11T12:22:11Z",
