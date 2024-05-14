@@ -62,9 +62,10 @@ properties:
           minItems: 2
           maxItems: 2
           items:
-            type: string
+            type:
+              - string
+              - "null"
             format: date-time
-            nullable: true
           example:
             - '2011-11-11T12:22:11Z'
             - null
