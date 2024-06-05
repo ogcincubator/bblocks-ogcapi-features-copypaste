@@ -1,70 +1,5 @@
 {
   "x-defs": {
-    "_github_workspace_build_annotated_api_features_v1_schemas_collection_schema.json": {
-      "$comment": "Adapted from https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collection.yaml",
-      "type": "object",
-      "required": [
-        "id",
-        "links"
-      ],
-      "properties": {
-        "id": {
-          "description": "identifier of the collection used, for example, in URIs",
-          "type": "string",
-          "example": "address"
-        },
-        "title": {
-          "description": "human readable title of the collection",
-          "type": "string",
-          "example": "address"
-        },
-        "description": {
-          "description": "a description of the features in the collection",
-          "type": "string",
-          "example": "An address."
-        },
-        "links": {
-          "type": "array",
-          "items": {
-            "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema-oas3.0.json#/x-defs/ogc.ogc-utils.json-link"
-          },
-          "example": [
-            {
-              "href": "http://data.example.com/buildings",
-              "rel": "item"
-            },
-            {
-              "href": "http://example.com/concepts/buildings.html",
-              "rel": "describedby",
-              "type": "text/html"
-            }
-          ]
-        },
-        "extent": {
-          "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema-oas3.0.json#/x-defs/ogcincubator.github.io_bblocks-ogcapi-features_build_annotated_api_features_v1_schemas_extent_schema.json"
-        },
-        "itemType": {
-          "description": "indicator about the type of the items in the collection (the default value is 'feature').",
-          "type": "string",
-          "default": "feature"
-        },
-        "crs": {
-          "description": "the list of coordinate reference systems supported by the service",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "default": [
-            "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
-          ],
-          "example": [
-            "http://www.opengis.net/def/crs/OGC/1.3/CRS84",
-            "http://www.opengis.net/def/crs/EPSG/0/4326"
-          ]
-        }
-      },
-      "x-schema-source": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema-oas3.0.json"
-    },
     "ogc.ogc-utils.json-link": {
       "description": "JSON Link",
       "type": "object",
@@ -110,10 +45,10 @@
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "dct": "http://purl.org/dc/terms/"
       },
-      "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
-      "x-schema-source": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json"
+      "x-schema-source": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json",
+      "x-schema-version": "https://json-schema.org/draft/2020-12/schema"
     },
-    "ogcincubator.github.io_bblocks-ogcapi-features_build_annotated_api_features_v1_schemas_extent_schema.json": {
+    "ogc.api.features.v1.schemas.extent": {
       "$comment": "Adapted from https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/extent.yaml",
       "description": "The extent of the features in the collection. In the Core only spatial and temporal\nextents are specified. Extensions may add additional members to represent other\nextents, for example, thermal or pressure ranges.\n\nAn array of extents is provided for each extent type (spatial, temporal). The first item\nin the array describes the overall extent of the data. All subsequent items describe more\nprecise extents, e.g., to identify clusters of data. Clients only interested in the\noverall extent will only need to access the first extent in the array.",
       "type": "object",
@@ -194,9 +129,66 @@
       "x-schema-source": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.yaml"
     }
   },
-  "allOf": [
-    {
-      "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema-oas3.0.json#/x-defs/_github_workspace_build_annotated_api_features_v1_schemas_collection_schema.json"
+  "$comment": "Adapted from https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collection.yaml",
+  "type": "object",
+  "required": [
+    "id",
+    "links"
+  ],
+  "properties": {
+    "id": {
+      "description": "identifier of the collection used, for example, in URIs",
+      "type": "string",
+      "example": "address"
+    },
+    "title": {
+      "description": "human readable title of the collection",
+      "type": "string",
+      "example": "address"
+    },
+    "description": {
+      "description": "a description of the features in the collection",
+      "type": "string",
+      "example": "An address."
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema-oas3.0.json#/x-defs/ogc.ogc-utils.json-link"
+      },
+      "example": [
+        {
+          "href": "http://data.example.com/buildings",
+          "rel": "item"
+        },
+        {
+          "href": "http://example.com/concepts/buildings.html",
+          "rel": "describedby",
+          "type": "text/html"
+        }
+      ]
+    },
+    "extent": {
+      "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema-oas3.0.json#/x-defs/ogc.api.features.v1.schemas.extent"
+    },
+    "itemType": {
+      "description": "indicator about the type of the items in the collection (the default value is 'feature').",
+      "type": "string",
+      "default": "feature"
+    },
+    "crs": {
+      "description": "the list of coordinate reference systems supported by the service",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+      ],
+      "example": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84",
+        "http://www.opengis.net/def/crs/EPSG/0/4326"
+      ]
     }
-  ]
+  }
 }

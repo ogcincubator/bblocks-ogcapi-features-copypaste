@@ -1,13 +1,1 @@
-x-defs:
-  _github_workspace_build_annotated_api_features_v1_schemas_exception_schema.yaml:
-    type: object
-    required:
-    - code
-    properties:
-      code:
-        type: string
-      description:
-        type: string
-    x-schema-source: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/exception/schema-oas3.0.yaml
-allOf:
-- $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/exception/schema-oas3.0.yaml#/x-defs/_github_workspace_build_annotated_api_features_v1_schemas_exception_schema.yaml
+null

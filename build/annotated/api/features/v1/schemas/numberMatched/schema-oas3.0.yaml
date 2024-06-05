@@ -1,11 +1,1 @@
-x-defs:
-  _github_workspace_build_annotated_api_features_v1_schemas_numberMatched_schema.yaml:
-    description: 'The number of features of the feature type that match the selection
-
-      parameters like `bbox`.'
-    type: integer
-    minimum: 0
-    example: 127
-    x-schema-source: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberMatched/schema-oas3.0.yaml
-allOf:
-- $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberMatched/schema-oas3.0.yaml#/x-defs/_github_workspace_build_annotated_api_features_v1_schemas_numberMatched_schema.yaml
+null
