@@ -22,8 +22,8 @@
   "abstract": "This building block corresponds to the schema for an OGC API Features collection",
   "shaclRules": {},
   "dependsOn": [
-    "ogc.api.features.v1.schemas.extent",
-    "ogc.ogc-utils.json-link"
+    "ogc.ogc-utils.json-link",
+    "ogc.api.features.v1.schemas.extent"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml",
