@@ -1,4 +1,5 @@
 {
+  "@context": "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collection/context.jsonld",
   "id": "roadl_1m",
   "title": "Roads",
   "extent": {
@@ -60,6 +61,5 @@
       "type": "application/xml",
       "href": "http://www.acme.com/3.0/wfs/collections/roadl_1m/schema"
     }
-  ],
-  "@context": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/context.jsonld"
+  ]
 }

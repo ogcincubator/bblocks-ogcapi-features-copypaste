@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.api.features.v1.api - OGC API Features",
+  "bblockName": "OGC API Features",
+  "bblockId": "ogc.api.features.v1.api",
+  "generated": "2025-10-22T22:08:52.570749+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

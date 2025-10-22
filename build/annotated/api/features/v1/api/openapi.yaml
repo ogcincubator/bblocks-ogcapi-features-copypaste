@@ -29,36 +29,36 @@ components:
     bbox:
       $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox/schema.yaml
     collectionId:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/collectionId/openapi.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/parameters/collectionId/openapi.yaml
     datetime:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/datetime/openapi.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/parameters/datetime/openapi.yaml
     featureId:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/featureId/openapi.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/parameters/featureId/openapi.yaml
     limit:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/parameters/limit/openapi.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/parameters/limit/openapi.yaml
   schemas:
     collection:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collection/schema.yaml
     collections:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collections/schema.yaml
     confClasses:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/confClasses/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/confClasses/schema.yaml
     exception:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/exception/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/exception/schema.yaml
     extent:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/extent/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/extent/schema.yaml
     featureCollectionGeoJSON:
       $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml
     featureGeoJSON:
       $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
     landingPage:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/landingPage/schema.yaml
     numberMatched:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberMatched/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/numberMatched/schema.yaml
     numberReturned:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberReturned/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/numberReturned/schema.yaml
     timeStamp:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/timeStamp/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/timeStamp/schema.yaml
   responses:
     LandingPage:
       description: 'The landing page provides links to the API definition

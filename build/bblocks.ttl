@@ -7,24 +7,37 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/bblocks.ttl> a prov:Entity ;
+    dct:format "text/turtle" ;
+    prov:wasAttributedTo _:N9c81ca44610742f69184d0400b74a287 ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            prov:endedAtTime "2025-10-22T22:08:52.668704"^^xsd:dateTime ;
+            prov:startedAtTime "2025-10-22T22:08:52.586620"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:66ddd7b70c9d42e178df50819f4dfb08d7b31c0d" ;
+                    rdfs:seeAlso <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/register.json> ],
+                [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            prov:wasAssociatedWith _:N9c81ca44610742f69184d0400b74a287 ] .
+
 <https://ogcincubator.github.io/ogc.api.features.v1.api> a skos:Concept,
         dcat:Dataset,
         bblocks:Api ;
     rdfs:label "OGC API Features" ;
-    dct:abstract "This building block corresponds to OGC API Features" ;
+    dct:abstract "This building block corresponds to OGC API Features"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/api/" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/api/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/api/index.md" ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/api/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.api" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.api" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/api/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
     bblocks:dependsOn <https://ogcincubator.github.io/ogc.api.features.v1.parameters.collectionId>,
@@ -49,20 +62,18 @@
         dcat:Dataset,
         bblocks:Parameter ;
     rdfs:label "collectionId parameter" ;
-    dct:abstract "This building block corresponds to the schema for an OGC API Features collectionId" ;
+    dct:abstract "This building block corresponds to the schema for an OGC API Features collectionId"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/parameters/collectionId/" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/parameters/collectionId/index.md" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/parameters/collectionId/index.json" ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/parameters/collectionId/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.parameters.collectionId" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.parameters.collectionId" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/parameters/collectionId/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
@@ -71,20 +82,18 @@
         dcat:Dataset,
         bblocks:Parameter ;
     rdfs:label "datetime parameter" ;
-    dct:abstract "This building block corresponds to the schema for an OGC API Features datetime" ;
+    dct:abstract "This building block corresponds to the schema for an OGC API Features datetime"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/parameters/datetime/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/parameters/datetime/" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.parameters.datetime" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/parameters/datetime/index.md" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/parameters/datetime/index.json" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/parameters/datetime/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.parameters.datetime" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
@@ -93,20 +102,18 @@
         dcat:Dataset,
         bblocks:Parameter ;
     rdfs:label "featureId parameter" ;
-    dct:abstract "This building block corresponds to the schema for an OGC API Features featureId" ;
+    dct:abstract "This building block corresponds to the schema for an OGC API Features featureId"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/parameters/featureId/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.parameters.featureId" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/parameters/featureId/" ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.parameters.featureId" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/parameters/featureId/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/parameters/featureId/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/parameters/featureId/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
@@ -115,20 +122,18 @@
         dcat:Dataset,
         bblocks:Parameter ;
     rdfs:label "limit parameter" ;
-    dct:abstract "This building block corresponds to the schema for an OGC API Features limit" ;
+    dct:abstract "This building block corresponds to the schema for an OGC API Features limit"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.parameters.limit" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/parameters/limit/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/parameters/limit/index.md" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/parameters/limit/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/parameters/limit/" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.parameters.limit" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/parameters/limit/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
@@ -137,251 +142,223 @@
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "Schema for collections" ;
-    dct:abstract "This building block corresponds to the schema for an OGC API Features collections" ;
+    dct:abstract "This building block corresponds to the schema for an OGC API Features collections"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/collections/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.collections" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/collections/" ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.schemas.collections" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/schemas/collections/index.md" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/collections/index.json" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/schemas/collections/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
     bblocks:dependsOn <https://ogcincubator.github.io/ogc.api.features.v1.schemas.collection>,
         <https://ogcincubator.github.io/ogc.ogc-utils.json-link> ;
-    bblocks:hasJsonLdContext <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/context.jsonld> ;
-    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/schema.json>,
-        <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/schema.yaml> ;
+    bblocks:hasJsonLdContext <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collections/context.jsonld> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collections/schema.json>,
+        <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collections/schema.yaml> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://ogcincubator.github.io/ogc.api.features.v1.schemas.confClasses> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "Schema for confClasses" ;
-    dct:abstract "This building block corresponds to the schema for an OGC API Features confClasses" ;
+    dct:abstract "This building block corresponds to the schema for an OGC API Features confClasses"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/confClasses/index.json" ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.schemas.confClasses" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/confClasses/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/confClasses/" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.confClasses" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/schemas/confClasses/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/schemas/confClasses/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
-    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/confClasses/schema.json>,
-        <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/confClasses/schema.yaml> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/confClasses/schema.json>,
+        <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/confClasses/schema.yaml> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://ogcincubator.github.io/ogc.api.features.v1.schemas.exception> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "Schema for exception" ;
-    dct:abstract "This building block corresponds to the schema for an OGC API Features exception" ;
+    dct:abstract "This building block corresponds to the schema for an OGC API Features exception"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.exception" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/exception/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/exception/" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/schemas/exception/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/exception/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/schemas/exception/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.schemas.exception" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
-    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/exception/schema.json>,
-        <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/exception/schema.yaml> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/exception/schema.json>,
+        <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/exception/schema.yaml> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://ogcincubator.github.io/ogc.api.features.v1.schemas.landingPage> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "Schema for landingPage" ;
-    dct:abstract "This building block corresponds to the schema for an OGC API Features landingPage" ;
+    dct:abstract "This building block corresponds to the schema for an OGC API Features landingPage"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/landingPage/index.md" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/schemas/landingPage/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/landingPage/" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.schemas.landingPage" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/landingPage/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.landingPage" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/schemas/landingPage/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
     bblocks:dependsOn <https://ogcincubator.github.io/ogc.ogc-utils.json-link> ;
-    bblocks:hasJsonLdContext <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/context.jsonld> ;
-    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.json>,
-        <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.yaml> ;
+    bblocks:hasJsonLdContext <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/landingPage/context.jsonld> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/landingPage/schema.json>,
+        <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/landingPage/schema.yaml> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://ogcincubator.github.io/ogc.api.features.v1.schemas.numberMatched> a skos:Concept,
         dcat:Dataset,
         bblocks:Datatype ;
     rdfs:label "Schema for numberMatched" ;
-    dct:abstract "The number of features of the feature type that match the selection parameters like `bbox`" ;
+    dct:abstract "The number of features of the feature type that match the selection parameters like `bbox`"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/numberMatched/" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/numberMatched/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/numberMatched/index.md" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/schemas/numberMatched/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.numberMatched" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.schemas.numberMatched" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/schemas/numberMatched/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
-    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberMatched/schema.json>,
-        <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberMatched/schema.yaml> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/numberMatched/schema.json>,
+        <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/numberMatched/schema.yaml> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://ogcincubator.github.io/ogc.api.features.v1.schemas.numberReturned> a skos:Concept,
         dcat:Dataset,
         bblocks:Datatype ;
     rdfs:label "Schema for numberReturned" ;
-    dct:abstract "The number of features in the feature collection" ;
+    dct:abstract "The number of features in the feature collection"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/numberReturned/index.md" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/numberReturned/index.json" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/schemas/numberReturned/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/schemas/numberReturned/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.numberReturned" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/numberReturned/" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.schemas.numberReturned" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
-    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberReturned/schema.json>,
-        <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/numberReturned/schema.yaml> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/numberReturned/schema.json>,
+        <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/numberReturned/schema.yaml> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://ogcincubator.github.io/ogc.api.features.v1.schemas.timeStamp> a skos:Concept,
         dcat:Dataset,
         bblocks:Datatype ;
     rdfs:label "Schema for timeStamp" ;
-    dct:abstract "This property indicates the time and date when the response was generated" ;
+    dct:abstract "This property indicates the time and date when the response was generated"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/timeStamp/" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/schemas/timeStamp/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.timeStamp" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/timeStamp/index.json" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.schemas.timeStamp" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/timeStamp/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/schemas/timeStamp/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
-    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/timeStamp/schema.json>,
-        <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/timeStamp/schema.yaml> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/timeStamp/schema.json>,
+        <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/timeStamp/schema.yaml> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://ogcincubator.github.io/ogc.api.features.v1.schemas.collection> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "Schema for collection" ;
-    dct:abstract "This building block corresponds to the schema for an OGC API Features collection" ;
+    dct:abstract "This building block corresponds to the schema for an OGC API Features collection"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/collection/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/collection/" ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.schemas.collection" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/collection/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.collection" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/schemas/collection/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/schemas/collection/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
     bblocks:dependsOn <https://ogcincubator.github.io/ogc.api.features.v1.schemas.extent>,
         <https://ogcincubator.github.io/ogc.ogc-utils.json-link> ;
-    bblocks:hasJsonLdContext <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/context.jsonld> ;
-    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.json>,
-        <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml> ;
+    bblocks:hasJsonLdContext <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collection/context.jsonld> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collection/schema.json>,
+        <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collection/schema.yaml> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://ogcincubator.github.io/ogc.api.features.v1.schemas.extent> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "Schema for extent" ;
-    dct:abstract "This building block corresponds to the schema for an OGC API Features extent" ;
+    dct:abstract "This building block corresponds to the schema for an OGC API Features extent"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-03-22T11:40:00+01:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/slate-build/api/features/v1/schemas/extent/" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/bblock/ogc.api.features.v1.schemas.extent" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/markdown/api/features/v1/schemas/extent/index.md" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/markdown/api/features/v1/schemas/extent/index.md" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/build/generateddocs/json-full/api/features/v1/schemas/extent/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features/bblock/ogc.api.features.v1.schemas.extent" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/generateddocs/json-full/api/features/v1/schemas/extent/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-03-22"^^xsd:date ;
+    dct:modified "2024-06-06"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r4/17-069r4.html> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> ;
     dcat:keyword "features",
         "ogcapi-features" ;
     bblocks:dependsOn <https://ogcincubator.github.io/ogc.geo.common.data_types.bounding_box> ;
-    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/extent/schema.json>,
-        <https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/extent/schema.yaml> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/extent/schema.json>,
+        <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/extent/schema.yaml> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://docs.ogc.org/is/17-069r4/17-069r4.html> rdfs:label "OGC API Features - Part 1 - Core corrigendum" .
 
-<https://ogcincubator.github.io/bblocks-ogcapi-features/> a skos:ConceptScheme,
+<https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/> a skos:ConceptScheme,
         dcat:Catalog ;
     rdfs:label "Building Blocks - OGC API Features" ;
     dct:abstract """This register will contain building blocks for OGC API Features.
-""" ;
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     skos:prefLabel "Building Blocks - OGC API Features" ;
-    bblocks:hasValidationReport <https://ogcincubator.github.io/bblocks-ogcapi-features/build/tests/report.html> ;
+    bblocks:hasValidationReport <https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/tests/report.html> ;
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
-[] a prov:Activity ;
-    prov:endedAtTime "2024-06-06T08:15:43.068260"^^xsd:dateTime ;
-    prov:startedAtTime "2024-06-06T08:15:42.991011"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:0c7ef0515f6885a5dada1a34efa56ca524e55baf" ;
-            rdfs:seeAlso <https://ogcincubator.github.io/bblocks-ogcapi-features/build/register.json> ],
-        [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
-                schema:SoftwareApplication ;
-            rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] .
+_:N9c81ca44610742f69184d0400b74a287 a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dct:hasVersion "0.4.6" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 

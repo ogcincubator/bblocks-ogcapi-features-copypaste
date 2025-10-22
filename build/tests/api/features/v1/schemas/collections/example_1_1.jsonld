@@ -1,4 +1,5 @@
 {
+  "@context": "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collections/context.jsonld",
   "links": [
     {
       "rel": "self",
@@ -191,6 +192,5 @@
         }
       ]
     }
-  ],
-  "@context": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/context.jsonld"
+  ]
 }

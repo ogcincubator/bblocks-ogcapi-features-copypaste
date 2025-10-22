@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.api.features.v1.parameters.collectionId - collectionId parameter",
+  "bblockName": "collectionId parameter",
+  "bblockId": "ogc.api.features.v1.parameters.collectionId",
+  "generated": "2025-10-22T22:08:52.358914+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

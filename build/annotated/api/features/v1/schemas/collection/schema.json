@@ -39,7 +39,7 @@
       ]
     },
     "extent": {
-      "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/extent/schema.json"
+      "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/extent/schema.json"
     },
     "itemType": {
       "description": "indicator about the type of the items in the collection (the default value is 'feature').",

@@ -15,6 +15,6 @@ This building block corresponds to the schema for an OGC API Features limit
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-ogcapi-features](https://github.com/ogcincubator/bblocks-ogcapi-features)
+* URL: [https://github.com/ogcincubator/bblocks-ogcapi-features-copypaste](https://github.com/ogcincubator/bblocks-ogcapi-features-copypaste)
 * Path: `_sources/v1/parameters/limit`
 

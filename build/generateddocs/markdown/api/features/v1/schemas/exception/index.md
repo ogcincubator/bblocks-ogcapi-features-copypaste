@@ -23,8 +23,8 @@ properties:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/exception/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/exception/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/exception/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/exception/schema.yaml)
 
 ## Sources
 
@@ -34,6 +34,6 @@ Links to the schema:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-ogcapi-features](https://github.com/ogcincubator/bblocks-ogcapi-features)
+* URL: [https://github.com/ogcincubator/bblocks-ogcapi-features-copypaste](https://github.com/ogcincubator/bblocks-ogcapi-features-copypaste)
 * Path: `_sources/v1/schemas/exception`
 

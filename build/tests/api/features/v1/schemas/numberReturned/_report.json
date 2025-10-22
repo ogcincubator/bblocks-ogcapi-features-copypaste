@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.api.features.v1.schemas.numberReturned - Schema for numberReturned",
+  "bblockName": "Schema for numberReturned",
+  "bblockId": "ogc.api.features.v1.schemas.numberReturned",
+  "generated": "2025-10-22T22:08:52.363625+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

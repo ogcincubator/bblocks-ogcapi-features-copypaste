@@ -250,7 +250,6 @@ components:
                   - type: object
                 geometry:
                   oneOf:
-                  - nullable: true
                   - title: GeoJSON Point
                     type: object
                     required:
@@ -554,6 +553,7 @@ components:
                         minItems: 4
                         items:
                           type: number
+                  nullable: true
                 bbox:
                   type: array
                   minItems: 4
@@ -822,7 +822,6 @@ components:
             x-jsonld-id: '@nest'
           geometry:
             oneOf:
-            - nullable: true
             - title: GeoJSON Point
               type: object
               required:
@@ -1190,6 +1189,7 @@ components:
                   x-jsonld-container: '@list'
                   x-jsonld-id: https://purl.org/geojson/vocab#bbox
             x-jsonld-id: https://purl.org/geojson/vocab#geometry
+            nullable: true
           bbox:
             type: array
             minItems: 4
@@ -1222,7 +1222,8 @@ components:
               $ref: '#/x-defs/ogc.ogc-utils.json-link'
             x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
           type:
-            const: Feature
+            enum:
+            - Feature
         required:
         - type
         - geometry

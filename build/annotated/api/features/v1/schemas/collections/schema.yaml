@@ -8,4 +8,4 @@ properties:
   collections:
     type: array
     items:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collection/schema.yaml

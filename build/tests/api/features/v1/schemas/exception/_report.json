@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.api.features.v1.schemas.exception - Schema for exception",
+  "bblockName": "Schema for exception",
+  "bblockId": "ogc.api.features.v1.schemas.exception",
+  "generated": "2025-10-22T22:08:52.344977+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

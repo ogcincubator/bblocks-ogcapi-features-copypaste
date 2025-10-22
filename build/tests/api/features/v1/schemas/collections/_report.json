@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.features.v1.schemas.collections - Schema for collections",
   "bblockName": "Schema for collections",
   "bblockId": "ogc.api.features.v1.schemas.collections",
-  "generated": "2024-06-06T08:15:42.972684+00:00",
+  "generated": "2025-10-22T22:08:52.566107+00:00",
   "result": false,
   "items": [
     {
@@ -10,19 +10,14 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/api/features/v1/schemas/collections/example_1_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/tests/api/features/v1/schemas/collections/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/tests/api/features/v1/schemas/collections/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
-        "language": "json",
+        "language": "application/json",
         "sourceUrl": "https://github.com/opengeospatial/ogcapi-features/raw/master/core/examples/json/Collections.json"
       },
       "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": []
-        },
         {
           "name": "FILES",
           "title": "Files",
@@ -63,26 +58,6 @@
               "message": "Validation passed"
             }
           ]
-        },
-        {
-          "name": "JSON_LD",
-          "title": "JSON-LD",
-          "entries": []
-        },
-        {
-          "name": "TURTLE",
-          "title": "Turtle",
-          "entries": []
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": []
-        },
-        {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": []
         }
       ]
     }

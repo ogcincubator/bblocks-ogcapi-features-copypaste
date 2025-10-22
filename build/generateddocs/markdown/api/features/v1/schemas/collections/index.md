@@ -196,6 +196,7 @@ This building block corresponds to the schema for an OGC API Features collection
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collections/context.jsonld",
   "links": [
     {
       "rel": "self",
@@ -388,8 +389,7 @@ This building block corresponds to the schema for an OGC API Features collection
         }
       ]
     }
-  ],
-  "@context": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/context.jsonld"
+  ]
 }
 ```
 
@@ -412,14 +412,14 @@ properties:
   collections:
     type: array
     items:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collection/schema.yaml
 
 ```
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collections/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collections/schema.yaml)
 
 
 # JSON-LD Context
@@ -451,7 +451,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/bblocks-ogcapi-features-copypaste/build/annotated/api/features/v1/schemas/collections/context.jsonld)
 
 ## Sources
 
@@ -461,6 +461,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-ogcapi-features](https://github.com/ogcincubator/bblocks-ogcapi-features)
+* URL: [https://github.com/ogcincubator/bblocks-ogcapi-features-copypaste](https://github.com/ogcincubator/bblocks-ogcapi-features-copypaste)
 * Path: `_sources/v1/schemas/collections`
 
